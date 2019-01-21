@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Photo Editor</h1>
+    <div class="editor">
+        <div class="tools">
+            <input type="button" id="save" value="Save">
+            <input type="button" id="reset" value="Reset">
+            <input type="file" id="load">
+            <p>
+                <label for="brightness">Brightness</label>
+                <input type="range" id="brightness" name="brightness" min="-100" max="100" value="0">
+            </p>
+            <p>
+                <label for="vibrance">Vibrance</label>
+                <input type="range" id="vibrance" name="vibrance" min="-100" max="100" value="0">
+            </p>
+            <p>
+                <label for="hue">Hue</label>
+                <input type="range" id="hue" name="hue" min="-100" max="100" value="0">
+            </p>
+            <p>
+                <label for="gamma">Gamma</label>
+                <input type="range" id="gamma" name="gamma" min="0" max="10" value="0">
+            </p>
+            <input type="button" id="vintage" class="filter" value="Vintage">
+            <input type="button" id="lomo" class="filter" value="Lomo">
+            <input type="button" id="clarity" class="filter" value="Clarity">
+            <input type="button" id="OrangePeel" class="filter" value="Orange Peel">
+        </div>
+        <img id="image" class="img" src="" alt="uploadedImage">
+    </div>
+    <script src="caman.full.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

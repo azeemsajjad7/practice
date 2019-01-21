@@ -1,0 +1,43 @@
+.container{
+    text-align: center;
+}
+
+#image{
+    padding: 20px;
+}
+
+.custom-file-label{
+    text-align: left;
+}
+
+.tools1{
+    padding: 20px;
+}
+
+.tools2{
+    padding: 20px;
+}
+
+.btn-effects{
+    width: 150px;
+}
+
+.tools21{
+    padding-bottom: 10px;
+}
+
+.lastTools{
+    padding: 20px;
+}
+
+.btn-success{
+    width: 250px;    
+}
+
+.btn-danger{
+    width: 250px;;
+}
+
+.mb-3{
+    padding: 5px;
+}

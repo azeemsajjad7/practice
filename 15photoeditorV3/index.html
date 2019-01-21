@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photo Editor V3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootswatch.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Photo Editor V3</a>
+    </nav><br>
+    <div class="container">
+        <div class="custom-file mb-3">                
+            <input type="file" class="custom-file-input" id="upload">
+            <label for="upload-file" class="custom-file-label">Choose Image</label>
+        </div>
+        <div>
+            <img id="image" class="img" src="http://www.insideoutsidenature.com/wp-content/uploads/2013/09/nature_3.png">
+        </div>
+
+        <div class="tools1">
+            <h2>Filters</h2>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="brightness-remove" class="btn btn-secondary">-</button>
+                <button type="button" class="btn btn-secondary" disabled>Brightness</button>
+                <button type="button" id="brightness-add" class="btn btn-secondary">+</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="contrast-remove" class="btn btn-secondary">-</button>
+                <button type="button" class="btn btn-secondary" disabled>Contrast</button>
+                <button type="button" id="contrast-add" class="btn btn-secondary">+</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="saturation-remove" class="btn btn-secondary">-</button>
+                <button type="button" class="btn btn-secondary" disabled>Saturation</button>
+                <button type="button" id="saturation-add" class="btn btn-secondary">+</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="vibrance-remove" class="btn btn-secondary">-</button>
+                <button type="button" class="btn btn-secondary" disabled>Vibrance</button>
+                <button type="button" id="vibrance-add" class="btn btn-secondary">+</button>
+            </div>
+        </div>
+        <div class="tools2">
+            <h2>Effects</h2>
+            <div class="tools21">
+                <button type="button" id="blur" class="btn btn-secondary btn-effects">Blur</button>
+                <button type="button" id="drop-shadow" class="btn btn-secondary btn-effects">Drop Shadow</button>
+                <button type="button" id="grayscale" class="btn btn-secondary btn-effects">Grayscale</button>
+                <button type="button" id="hue-rotate" class="btn btn-secondary btn-effects">Hue</button>
+            </div>
+            <div class="tools22">
+                <button type="button" id="invert" class="btn btn-secondary btn-effects">Invert</button>
+                <button type="button" id="opacity" class="btn btn-secondary btn-effects">Opacity</button>
+                <button type="button" id="saturate" class="btn btn-secondary btn-effects">Saturate</button>
+                <button type="button" id="sepia" class="btn btn-secondary btn-effects">Sepia</button>
+            </div>
+        </div>
+        <div class="lastTools">
+                <button type="button" id="downloadImage" class="btn btn-success">Download Image</button>
+                <button type="button" id="resetImage" class="btn btn-danger">Reset</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
