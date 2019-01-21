@@ -1,0 +1,50 @@
+body{
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 3pt;
+    border: solid black 4px;
+    width: 209pt;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.calc-button{
+    font-family: 'Digital';
+    font-size: 20pt;
+    height: 50pt;
+    width: 50pt;
+    cursor: pointer;
+}
+
+
+#calcEquals{
+    background-color: green;
+}
+
+
+#clearButton{
+
+}
+
+
+#screen{
+    font-family: "Bank Gothic", "Futura", "Arial";
+    width: 209pt;
+    margin: 1pt;
+    height: 40pt;
+    font-size: 30pt;
+    text-align: right;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+table{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

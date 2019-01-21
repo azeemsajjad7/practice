@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SImple Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <script src="calc.js"></script>
+    <div id="d1">
+        <div id="d2">
+            <p id="p1">Enter the first No.</p>
+            <p><input type="number" id="num1" placeholder="0"></p>
+            <p>Enter the second No.</p>
+            <p><input type="number" id="num2" placeholder="0"></p>
+        </div>
+        <br>
+        <div id="d3">
+            <input type="button" id="btn" value="+" onclick="doPlus()">
+            <input type="button" id="btn" value=" - " onclick="doMinus()">
+            <input type="button" id="btn" value="X" onclick="doMulti()">
+            <input type="button" id="btn" value=" / " onclick="doDivide()">
+        </div>
+        <div id="ans">
+            <span>Answer is </span><span id="tot"></span>
+        </div>
+    </div>
+</body>
+
+</html>

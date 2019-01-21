@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <script src="quiz.js"></script>
+    <h1>Simple Quiz</h1>
+    <div id="d1">
+        <p id="question1"><b>Question NO 1:-</b> Grand Central Terminal, Park Avenue in New York is the world's</p>
+        <input type="radio" id="opt1" name="ques1" value="1">
+        <label for="opt1">largest railway station</label><br>
+
+        <input type="radio" id="opt2" name="ques1" value="2">
+        <label for="opt1">highest railway station</label><br>
+
+        <input type="radio" id="opt3" name="ques1" value="3">
+        <label for="opt1">longest railway station</label><br>
+
+        <input type="radio" id="opt4" name="ques1" value="4">
+        <label for="opt1">None of the above</label>
+    </div>
+    <br>
+    <div id="d2">
+        <p id="question2"><b>Question NO 2:-</b> Entomology is the science that studies about</p>
+
+        <input type="radio" id="opt1" name="ques2" value="1">
+        <label for="opt1">Behavior of human beings</label><br>
+
+        <input type="radio" id="opt2" name="ques2" value="2">
+        <label for="opt1">Insects</label><br>
+
+        <input type="radio" id="opt3" name="ques2" value="3">
+        <label for="opt1"></label>The origin and history of technical and scientific terms</label><br>
+
+        <input type="radio" id="opt4" name="ques2" value="4">
+        <label for="opt1">The formation of rocks</label><br>
+    </div>
+    <br>
+    <div id="d3">
+        <p id="question3"><b>Question NO 3:-</b> 	
+            In which year of First World War Germany declared war on Russia and France?</p>
+
+        <input type="radio" id="opt1" name="ques3" value="1">
+        <label for="opt1">1914</label><br>
+
+        <input type="radio" id="opt2" name="ques3" value="2">
+        <label for="opt1">1915</label><br>
+
+        <input type="radio" id="opt3" name="ques3" value="3">
+        <label for="opt1">1916</label><br>
+
+        <input type="radio" id="opt4" name="ques3" value="4">
+        <label for="opt1">1917</label><br>
+    </div>
+    <br>
+    <div id="d4">
+        <p id="question4"><b>Question NO 4:-</b> For which of the following disciplines is Nobel Prize awarded?</p>
+
+        <input type="radio" id="opt1" name="ques4" value="1">
+        <label for="opt1">Physics and Chemistry</label><br>
+
+        <input type="radio" id="opt2" name="ques4" value="2">
+        <label for="opt1">Physiology or Medicine</label><br>
+
+        <input type="radio" id="opt3" name="ques4" value="3">
+        <label for="opt1">Literature, Peace and Economics</label><br>
+
+        <input type="radio" id="opt4" name="ques4" value="4">
+        <label for="opt1">All of the above</label><br>
+    </div>
+    <br>
+    <div id="submitter">
+        <input type="button" id="submitbtn" value="Submit" onclick="doSubmit()">
+    </div>
+    <br><br>
+    <div id="correctAnswer1"></div>
+    <div id="correctAnswer2"></div>
+    <div id="correctAnswer3"></div>
+    <div id="correctAnswer4"></div>
+
+    <div id="nAns">
+        <h2><span>No of question not answered </span><span id="notAns"></span></h2>
+    </div>
+
+    <div id="score">
+        <h2><span>Your score is </span><span id="userscore"></span></h2>
+    </div>
+</body>
+
+</html>

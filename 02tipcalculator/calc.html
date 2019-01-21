@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="calc2.css">
+</head>
+<body>
+    <script src="calc1.js"></script>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <div id="calculator">
+            <form>
+                <p>How much is your bill?</p>
+                <p>$ <input type="text" id="billamt" placeholder="Bill Amount"></p>
+                <p>How was your service</p>
+                <select id="serviceQual">
+                    <option disabled selected value="0">Choose a Option</option>
+                    <option value="0.3">30% OutStanding</option>
+                    <option value="0.2">20% Good</option>
+                    <option value="0.15">15% It was OK</option>
+                    <option value="0.1">10% Bad</option>
+                    <option value="0.05">5% Terrible</option>
+                </select>
+            </form>
+            <p>How many people are shearing the food?</p>
+            <p><input type="text" id="peopleamt" placeholder="No of people"> people<br>
+            <input type="button" value="Calculate" id="calculate" onclick="calculateTip()"></p>
+        </div>
+        <div id="totalTip">
+            <sup>$</sup><span id="tip">0.00</span>
+            <small id="each">each</small>
+        </div>
+    </div>
+</body>
+</html>

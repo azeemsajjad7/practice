@@ -1,0 +1,28 @@
+#d1{
+    text-align: center;
+}
+#d2{
+    text-align: center;
+  border: 3px solid green;
+  height: 115pt;
+  width: 150pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ #btn {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: rgb(175, 76, 76);
+        border: none;
+        border-radius: 15px;
+      }
+#ans{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20pt;
+}

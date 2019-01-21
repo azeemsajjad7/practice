@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Update CSS by JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Update CSS by JS</h1>
+    <div id="work">
+        <div class="controls">
+            <div id="space">
+                <label>Spacing</label>
+                <input type="range" id="spacing" min="10" max="100" value="10">
+                <p>Value: <span id="val1"></span></p>
+            </div>
+            <div id="blr">
+                <label>Blur</label>
+                <input type="range" id="blur" min="0" max="10" value="0">
+                <p>Value: <span id="val2"></span></p>
+            </div>
+            <div id="clr">
+                <label>Base Color</label>
+                <input type="color" id="baseColor" value="#ffffff">
+                <p>Color: <span id="val3"></span></p>
+            </div>
+        </div>
+        <div>
+            <img id="image" class="img" src="" alt="uploaded image">
+        </div>
+    </div>
+    <div>
+        <input type="file" id="upload">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
