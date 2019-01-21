@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mass</title>
+    <link rel="stylesheet" href="unit_mass.css">
+</head>
+
+<body>
+    <script src="unit_mass.js"></script>
+    <div id="d1">
+        <div>
+            <h2>From</h2>
+            <select id="mass_opt1">
+                <option disabled selected>Choose a Option</option>
+                <option value="kg">kilogram [kg]</option>
+                <option value="g">gram [g]</option>
+                <option value="ton">ton [t]</option>
+                <option value="pound">pound [lbs]</option>
+                <option value="ounce">ounce [oz]</option>
+            </select>
+        </div><br>
+        <input type="number" id="input">
+        <div>
+            <h2>To</h2>
+            <select id="mass_opt2">
+                <option disabled selected>Choose a Option</option>
+                <option value="kg">kilogram [kg]</option>
+                <option value="g">gram [g]</option>
+                <option value="ton">ton [t]</option>
+                <option value="pound">pound [lbs]</option>
+                <option value="ounce">ounce [oz]</option>
+            </select>
+        </div>
+        <br>
+        <input type="button" id="cnBtn" placeholder="Enter any no" value="Convert" onclick="doConvert()">
+        <br>
+        <p id="result"></p>
+        <br>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Temperature</title>
+    <link rel="stylesheet" href="unit_temperature.css">
+</head>
+
+<body>
+    <script src="unit_temperature.js"></script>
+    <div id="d1">
+        <div>
+            <h2>From</h2>
+            <select id="temp_opt1">
+                <option disabled selected>Choose a Option</option>
+                <option value="k">kelvin [K]</option>
+                <option value="c">celsius [°C]</option>
+                <option value="f">fahrenheit [°F]</option>
+                <option value="r">rankine [°R]</option>
+                <option value="r2">reaumur [°r]</option>
+            </select>
+        </div><br>
+        <input type="number" id="input">
+        <div>
+            <h2>To</h2>
+            <select id="temp_opt2">
+                <option disabled selected>Choose a Option</option>
+                <option value="k">kelvin [K]</option>
+                <option value="c">celsius [°C]</option>
+                <option value="f">fahrenheit [°F]</option>
+                <option value="r">rankine [°R]</option>
+                <option value="r2">reaumur [°r]</option>
+            </select>
+        </div>
+        <br>
+        <input type="button" id="cnBtn" value="Convert" onclick="doConvert()">
+        <br>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Speed</title>
+    <link rel="stylesheet" href="unit_speed.css">
+</head>
+
+<body>
+    <script src="unit_speed.js"></script>
+    <div id="d1">
+        <div>
+            <h2>From</h2>
+            <select id="speed_opt1">
+                <option disabled selected>Choose a Option</option>
+                <option value="mph">miles/hour [m/h]</option>
+                <option value="kmph">kilometer/hour [km/h]</option>
+                <option value="mps">meter/second [m/s]</option>
+                <option value="knots">Knots [kn]</option>
+                <option value="mach">Mach No</option>
+            </select>
+        </div><br>
+        <input type="number" id="input">
+        <div>
+            <h2>To</h2>
+            <select id="speed_opt2">
+                <option disabled selected>Choose a Option</option>
+                <option value="mph">miles/hour [m/h]</option>
+                <option value="kmph">kilometer/hour [km/h]</option>
+                <option value="mps">meter/second [m/s]</option>
+                <option value="knots">Knots [kn]</option>
+                <option value="mach">Mach No</option>
+            </select>
+        </div>
+        <br>
+        <input type="button" id="cnBtn" value="Convert" onclick="doConvert()">
+        <br>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

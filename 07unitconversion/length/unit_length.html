@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Length</title>
+    <link rel="stylesheet" href="unit_length.css">
+</head>
+
+<body>
+    <script src="unit_length.js"></script>
+    <div id="d1">
+        <div>
+            <h2>From</h2>
+            <select id="len_opt1">
+                <option disabled selected>Choose a Option</option>
+                <option value="m">meter [m]</option>
+                <option value="km">kilometer [km]</option>
+                <option value="mile">mile [mi]</option>
+                <option value="yd">yard [yd]</option>
+                <option value="ft">foot [ft]</option>
+                <option value="in">inch [in]</option>
+                <option value="nm">nautical mile [nm]</option>
+            </select>
+        </div><br>
+        <input type="number" id="input">
+        <div>
+            <h2>To</h2>
+            <select id="len_opt2">
+                <option disabled selected>Choose a Option</option>
+                <option value="m">meter [m]</option>
+                <option value="km">kilometer [km]</option>
+                <option value="mile">mile [mi]</option>
+                <option value="yd">yard [yd]</option>
+                <option value="ft">foot [ft]</option>
+                <option value="in">inch [in]</option>
+                <option value="nm">nautical mile [nm]</option>
+            </select>
+        </div>
+        <br>
+        <input type="button" id="cnBtn" value="Convert" onclick="doConvert()">
+        <br>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

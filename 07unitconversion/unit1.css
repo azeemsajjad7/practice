@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    border: solid black;
+    width: 32%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div{
+    text-align: center;
+}
+#btn1{
+    background :url(balance-100x100.png) no-repeat center;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20pt; 
+    padding: 50px 100px;
+    cursor: pointer;
+}
+#btn2{
+    background: url(temperature.png) no-repeat center;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20pt; 
+    padding: 50px 100px;
+    cursor: pointer;
+}
+#btn3{
+    background: url(1546668241_tmp_ruler-and-square-measuring-tools_318-59480100x100.png) no-repeat center;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20pt; 
+    padding: 50px 100px;
+    cursor: pointer;
+}
+#btn4{
+    background: url(67598797-speed-meter-kilometers-per-hour-illustration-isolated-on-white-background100x100.png) no-repeat center;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20pt; 
+    padding: 50px 100px;
+    cursor: pointer;
+}
