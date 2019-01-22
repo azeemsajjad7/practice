@@ -12,8 +12,11 @@ function addLi(targetUl) {
     var textNode = document.createTextNode(inputText + ' ')
     var check = document.createElement("input")
     check.type = "checkbox"
+    check.classList.add("custom-checkbox")
     var editButton = document.createElement("button")
+    editButton.classList.add("btn-primary")
     var removeButton = document.createElement("button")
+    removeButton.classList.add("btn-warning")
     document.getElementById("text").value = ""
 
     if (inputText.length === 0) {

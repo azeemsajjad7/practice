@@ -1,3 +1,36 @@
 ul{
     list-style-type: none;
 }
+
+.form-group{
+    padding: 20px;
+    width: 300px;
+}
+
+.stuff{
+    display: flex;
+}
+
+.btn{
+    height: 38px;
+    margin-top: 20px;
+}
+
+.btn-warning{
+    margin-left: 5px;
+}
+
+.btn-primary,.btn-warning{
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.custom-checkbox{
+    zoom: 2;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+li{
+    padding: 5px;
+}
