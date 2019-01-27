@@ -1,0 +1,30 @@
+.display-3{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.jumbotron{
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.first-line{
+    display: flex;
+}
+
+td{
+    font-size: 20px;
+}
+
+.current-details{
+    padding: 10px;
+}
+
+.current-details p{
+    padding-left: 10px;
+}
+
+#box{
+    margin-left: 10px;
+    display: flex;
+}

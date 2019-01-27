@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta http-equiv="refresh" content="60"> -->
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="bootswatch.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="jumbotron">
+            <h1 class="display-3">Weather Information</h1>
+        </div>
+    </div>
+    <table class="table">
+        <tr>
+            <td>Location : <span class="location">Lucknow</span></td>
+            <td>
+                <p>Longitude : <span class="longitude-val">78</span></p>
+                <p>Latitude : <span class="latitude-val">87</span></p>
+            </td>
+            <td>
+                <p>Time : <span class="time"></span></p>
+            </td>
+        </tr>
+    </table>
+    <table class="table">
+        <tr>
+            <td>
+                <div class="temperature">
+                    temp
+                </div>
+            </td>
+            <td>
+                <div class="animation">
+                    <canvas class="icon" width="128" height="128"></canvas>
+                    <div class="discription">discription</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="card text-white bg-dark mb-3" id="box" style="max-width: 20rem;">
+        <div class="card-header">
+            <h3>Current Details</h3>
+        </div>
+        <div class="card-body">
+            <p class="humidity">Humidity : <span class="humidity-val"></span></p>
+            <p class="dew-point">Dew Point : <span class="dew-point-val"></span></p>
+            <p class="pressure">Pressure : <span class="pressure-val"></span></p>
+            <p class="uv-index">UV Index : <span class="uv-index-val"></span></p>
+            <p class="visibility">Visibility : <span class="visibility-val"></span></p>
+        </div>
+        
+    </div>
+
+    <script src="skycons.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
