@@ -16,10 +16,10 @@
     </div>
     <table class="table">
         <tr>
-            <td>Location : <span class="location">Lucknow</span></td>
+            <td>Location : <span class="location">set_location</span></td>
             <td>
-                <p>Longitude : <span class="longitude-val">78</span></p>
-                <p>Latitude : <span class="latitude-val">87</span></p>
+                <p>Longitude : <span class="longitude-val"></span></p>
+                <p>Latitude : <span class="latitude-val"></span></p>
             </td>
             <td>
                 <p>Time : <span class="time"></span></p>
@@ -29,13 +29,15 @@
     <table class="table">
         <tr>
             <td>
-                <div class="temperature">
-                    temp
+                <div>
+                    <h3>Temperature :</h3>
+                    <span class="temperature"></span><span id="deg"> F</span><br>
+                    <button id="convert" type="button" class="btn btn-secondary">Convert to Celsius</button>
                 </div>
             </td>
             <td>
                 <div class="animation">
-                    <canvas class="icon" width="128" height="128"></canvas>
+                    <canvas class="icon" width="150" height="150"></canvas>
                     <div class="discription">discription</div>
                 </div>
             </td>
@@ -46,13 +48,13 @@
             <h3>Current Details</h3>
         </div>
         <div class="card-body">
-            <p class="humidity">Humidity : <span class="humidity-val"></span></p>
-            <p class="dew-point">Dew Point : <span class="dew-point-val"></span></p>
-            <p class="pressure">Pressure : <span class="pressure-val"></span></p>
+            <p class="humidity">Humidity : <span class="humidity-val"></span> %</p>
+            <p class="dew-point">Dew Point : <span class="dew-point-val"> </span></p>
+            <p class="pressure">Pressure : <span class="pressure-val"></span> hPa</p>
             <p class="uv-index">UV Index : <span class="uv-index-val"></span></p>
-            <p class="visibility">Visibility : <span class="visibility-val"></span></p>
+            <p class="visibility">Visibility : <span class="visibility-val"></span> km</p>
         </div>
-        
+
     </div>
 
     <script src="skycons.js"></script>

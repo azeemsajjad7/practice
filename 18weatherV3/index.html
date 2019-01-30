@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img id="weatherIcon" src="weather-icon.png" alt="logo">
+                <h3>Weather Information</h3>
+            </div>
+        </div>
+    </header>
+
+    <form class="form-inline my-2 my-lg-0">
+        <i id="currentLocation" class="fas fa-location-arrow"></i>
+        <input type="text" id="city" placeholder="Enter City">
+        <input id="search" class="btn btn-primary" type="button" value="Search">
+    </form>
+
+    <table class="table">
+        <tr>
+            <td class="location">
+                <h5>Location : <span id="location"></span><span id="country"></span></h5>
+            </td>
+            <td class="latlon">
+                <li>Latitude : <span id="latitude"></span></li>
+                <li>Longitude : <span id="longitude"></span></li>
+            </td>
+            <td class="time">Time : <span id="hour"></span>:<span id="minute"></span></td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <td>
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header">
+                        <h5><b>Temperature</b></h5>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" id="f" class="btn btn-secondary">F</button>
+                            <button type="button" id="c" class="btn btn-secondary">C</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <li>Current Temperature : <span id="temperature"></span></li>
+                        <li><i class="fas fa-arrow-up"></i> Temperature : <span id="max-temperature"></span></li>
+                        <li><i class="fas fa-arrow-down"></i> Temperature : <span id="min-temperature"></span></li>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header">
+                        <h5><b>Summary</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <img id="image" src="">
+                        <p id="summary"></p>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header">
+                        <h5><b>Current Details</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <li>Humidity : <span id="humidity"></span></li>
+                        <li>Dew Point : <span id="dew_point"></span></li>
+                        <li>Pressure : <span id="pressure"></span></li>
+                        <li>UV Index : <span id="uvIndex"></span></li>
+                        <li>Visibility : <span id="visibility"></span></li>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header">
+                        <h5><b>Other Details</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <li>Wind Speed : <span id="windSpeed"></span></li>
+                        <li>Wind Gust : <span id="windGust"></span></li>
+                        <li>Wind Bearing : <span id="windBearing"></span></li>
+                        <li>Cloud Cover : <span id="cloudCover"></span></li>
+                        <li>Ozone : <span id="ozone"></span></li>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+   
+   <script src="app.js"></script>
+</body>
+
+</html>

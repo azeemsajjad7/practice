@@ -1,5 +1,3 @@
-//AIzaSyCAN4NgVoggX58lAu_D10fRPL9wx3UuMXs
-
 window.addEventListener("load", function () {
     let locality = document.querySelector(".location")
     let currentLongitude = document.querySelector(".longitude-val")
@@ -17,41 +15,13 @@ window.addEventListener("load", function () {
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
-            currentLongitude = position.coords.longitude
+            currentLongitude = (position.coords.longitude)
             currentLatitude = position.coords.latitude
 
             const proxy = "https://cors-anywhere.herokuapp.com/"
             const api = `${proxy}https://api.darksky.net/forecast/2a03c0d59a47fb31e66e05813d6a81df/${currentLatitude},${currentLongitude}`
-            // const googleApi = `${proxy}http://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&sensor=false`
             const sunrise_sunsetApi = `https://api.sunrise-sunset.org/json?lat=${position.coords.latitude}&lng=${position.coords.longitude}`
-
-            const locationUrl = "https://geoip-db.com/jsonp/"
-
-            fetch(locationUrl)
-            .then(function(responce){
-                return responce.json
-            })
-            .then(function(data){
-                console.log(data)
-            })
-
-            // fetch(googleApi)
-            //     .then(function (responce) {
-            //         return responce.json()
-            //     })
-            //     .then(function (data) {
-            //         console.log(data)
-            //     })
-
-            fetch(sunrise_sunsetApi)
-                .then(function (responce) {
-                    return responce.json()
-                })
-                .then(function (data) {
-                    console.log(data)
-                    const { sunrise, sunset } = data.results
-                    console.log(sunrise, sunset)
-                })
+            
 
             fetch(api)
                 .then(function (responce) {
@@ -61,10 +31,8 @@ window.addEventListener("load", function () {
                     console.log(data)
                     //longitude and latitude
                     const { latitude, longitude } = data
-                    console.log(latitude)
-                    console.log(longitude)
-                    currentLongitude.textContent = longitude
-                    currentLatitude.textContent = latitude
+                    document.querySelector(".longitude-val").innerHTML = longitude.toFixed(5)
+                    document.querySelector(".latitude-val").innerHTML = latitude.toFixed(5)
 
                     //time
                     const fullDate = new Date()
@@ -83,9 +51,25 @@ window.addEventListener("load", function () {
                     //temp , summary and icon
                     const { temperature, summary, icon, } = data.currently
                     currentSummary.textContent = summary
+                    document.querySelector(".temperature").innerHTML = temperature
                     setIcon(icon, document.querySelector(".icon"))
-                    // console.log(temperature)
-                    // console.log(icon)
+                    var convert = document.getElementById("convert")
+                    let deg = document.getElementById("deg")
+
+
+                    convert.addEventListener("click", function () {
+                        if (deg.textContent === " F") {
+                            let celsius = ((temperature - 32) * (5 / 9)).toFixed(2)
+                            document.querySelector(".temperature").textContent = celsius
+                            document.getElementById("deg").textContent = " C"
+                            document.getElementById("convert").textContent = "Convert to Fahrenheit"
+                        } else {
+                            document.querySelector(".temperature").innerHTML = temperature
+                            document.getElementById("convert").innerHTML = "Convert to Celsius"
+                            document.getElementById("deg").textContent = " F"
+                        }
+
+                    })
 
                     //current details
                     const { humidity, dewPoint, pressure, uvIndex, visibility } = data.currently
@@ -94,6 +78,16 @@ window.addEventListener("load", function () {
                     currentPressure.textContent = pressure
                     currentUVIndex.textContent = uvIndex
                     currentVisibility.textContent = visibility
+                })
+
+
+            fetch(sunrise_sunsetApi)
+                .then(function (responce) {
+                    return responce.json()
+                })
+                .then(function (data) {
+                    const { sunrise, sunset } = data.results
+                    console.log(sunrise, sunset)
                 })
         })
     }
