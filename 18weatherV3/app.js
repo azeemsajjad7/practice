@@ -88,43 +88,43 @@ search.addEventListener('click', function () {
 
                     switch (icon) {
                         case "clear-day":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/clear-day.png')
+                            document.getElementById('image').setAttribute('src', 'clear-day.png')
                             break;
                         case "clear-night":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/clear-night.png')
+                            document.getElementById('image').setAttribute('src', 'clear-night.png')
                             break;
                         case "rain":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/rain.png')
+                            document.getElementById('image').setAttribute('src', 'rain.png')
                             break;
                         case "snow":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/snow.png')
+                            document.getElementById('image').setAttribute('src', 'snow.png')
                             break;
                         case "sleet":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/sleet.png')
+                            document.getElementById('image').setAttribute('src', 'sleet.png')
                             break;
                         case "wind":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/wind.png')
+                            document.getElementById('image').setAttribute('src', 'wind.png')
                             break;
                         case "fog":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/fog.png')
+                            document.getElementById('image').setAttribute('src', 'fog.png')
                             break;
                         case "cloudy":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/cloudy.png')
+                            document.getElementById('image').setAttribute('src', 'cloudy.png')
                             break;
                         case "partly-cloudy-day":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/partly-cloudy-day.png')
+                            document.getElementById('image').setAttribute('src', 'partly-cloudy-day.png')
                             break;
                         case "partly-cloudy-night":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/partly-cloudy-night.png')
+                            document.getElementById('image').setAttribute('src', 'partly-cloudy-night.png')
                             break;
                         case "hail":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/hail.png')
+                            document.getElementById('image').setAttribute('src', 'hail.png')
                             break;
                         case "thunderstorm":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/thunderstorm.png')
+                            document.getElementById('image').setAttribute('src', 'thunderstorm.png')
                             break;
                         case "tornado":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/tornado.png')
+                            document.getElementById('image').setAttribute('src', 'tornado.png')
                             break;
 
                     }
@@ -194,43 +194,43 @@ currentLocation.addEventListener('click', function () {
 
                     switch (icon) {
                         case "clear-day":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/clear-day.png')
+                            document.getElementById('image').setAttribute('src', 'clear-day.png')
                             break;
                         case "clear-night":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/clear-night.png')
+                            document.getElementById('image').setAttribute('src', 'clear-night.png')
                             break;
                         case "rain":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/rain.png')
+                            document.getElementById('image').setAttribute('src', 'rain.png')
                             break;
                         case "snow":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/snow.png')
+                            document.getElementById('image').setAttribute('src', 'snow.png')
                             break;
                         case "sleet":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/sleet.png')
+                            document.getElementById('image').setAttribute('src', 'sleet.png')
                             break;
                         case "wind":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/wind.png')
+                            document.getElementById('image').setAttribute('src', 'wind.png')
                             break;
                         case "fog":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/fog.png')
+                            document.getElementById('image').setAttribute('src', 'fog.png')
                             break;
                         case "cloudy":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/cloudy.png')
+                            document.getElementById('image').setAttribute('src', 'cloudy.png')
                             break;
                         case "partly-cloudy-day":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/partly-cloudy-day.png')
+                            document.getElementById('image').setAttribute('src', 'partly-cloudy-day.png')
                             break;
                         case "partly-cloudy-night":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/partly-cloudy-night.png')
+                            document.getElementById('image').setAttribute('src', 'partly-cloudy-night.png')
                             break;
                         case "hail":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/hail.png')
+                            document.getElementById('image').setAttribute('src', 'hail.png')
                             break;
                         case "thunderstorm":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/thunderstorm.png')
+                            document.getElementById('image').setAttribute('src', 'thunderstorm.png')
                             break;
                         case "tornado":
-                            document.getElementById('image').setAttribute('src', '/home/azeem/Desktop/practice/18weatherV3/iconPack/tornado.png')
+                            document.getElementById('image').setAttribute('src', 'tornado.png')
                             break;
 
                     }
