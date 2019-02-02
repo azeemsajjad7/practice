@@ -126,6 +126,8 @@ search.addEventListener('click', function () {
                         case "tornado":
                             document.getElementById('image').setAttribute('src', 'tornado.png')
                             break;
+                        default:
+                            alert("City Not Found")
 
                     }
 
@@ -172,7 +174,6 @@ currentLocation.addEventListener('click', function () {
                 .then(function (data) {
                     const { temperature, humidity, pressure, windSpeed, windGust, windBearing, cloudCover, uvIndex, icon, dewPoint, summary, visibility, ozone } = data.currently
 
-                    console.log(icon)
                     document.getElementById('summary').innerHTML = summary
                     document.getElementById('temperature').innerHTML = temperature + ' F'
                     document.getElementById('humidity').innerHTML = (humidity * 100) + ' %'
@@ -232,6 +233,8 @@ currentLocation.addEventListener('click', function () {
                         case "tornado":
                             document.getElementById('image').setAttribute('src', 'tornado.png')
                             break;
+                        default:
+                            alert("City Not Found")
 
                     }
 

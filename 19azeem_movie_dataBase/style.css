@@ -1,0 +1,35 @@
+#movies img, #movie img {
+    width: 100%;
+}
+
+@media(min-width:960px) {
+    #movies .col-md-3 .well {
+        height: 500px;
+        background: #443636;
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    #movies .col-md-3 img {
+        height: 340px;
+        padding: 10px;
+    }
+}
+
+#movieTilte {
+    height: 100px;
+}
+
+#moviePlot {
+    font-size: 20px;
+}
+
+#imdbBtn, #goBackBtn {
+    margin-bottom: 20px;
+}
+
+#searchBtn{
+    margin-top: 10px;
+    text-align: center;
+}
