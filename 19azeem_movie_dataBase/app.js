@@ -56,7 +56,6 @@ function getMovie() {
 
     axios.get(`http://www.omdbapi.com/?apikey=f3110b4b&i=${movieId}`)
         .then(function (response) {
-            console.log(response)
             let movie = response.data
             let output = `
             <div class="row">
@@ -80,14 +79,15 @@ function getMovie() {
                     </div>
                 </div>
                 <div class="row">
-                    <div class="well">
+                    <div class="swell">
                         <h3>Plot</h3>
                         <p id="moviePlot">${movie.Plot}</p>                        
                         <hr>
+                        <a href="https://www.imdb.com/video/imdb/vi${movie.Plot}?playlistId=${movie.imdbID}&ref_=tt_ov_vi" target="_blank" id="imdbBtn" class="btn btn-primary">View Trailer</a>
                         <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" id="imdbBtn" class="btn btn-primary">View IMDb</a>
                         <a href="index.html" id="goBackBtn" class="btn btn-primary">Go back to Search</a>                        
                     </div>                    
-                </div>                
+                </div>  
             `
             $('#movie').html(output)
         })
