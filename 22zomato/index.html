@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Food Finder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <img id="logo" src="images/649594-84.png" alt="">
+        <h1 style="color:rgb(255, 255, 255)">Food Finder</h1>
+    </nav>
+    <br><br>
+    <table class="table table-hover">
+        <tbody>
+            <tr class="table-active">
+                <th>Search By Restaurant</th>
+                <th>Search By City or Location</th>
+            </tr>
+            <tr class="table-active">
+                <td>
+                    <input type="text" class="form-control" id="enterRestaurant" placeholder="Enter Restaurant Name...">
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" class="form-control" id="enterCity" placeholder="Enter City...">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-thumbtack"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="table-active">
+                <td></td>
+                <td>
+                    <select id="allCat" class="custom-select">
+                        <option selected="true" disabled="disabled">Select Category</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="table-active">
+                <td>
+                    <input type="button" class="btn btn-primary" value="Search" id="searchRestaurant">
+                </td>
+                <td>
+                    <input type="button" class="btn btn-primary" value="Search by Location" id="searchCity">
+                    <input type="button" class="btn btn-primary" value="Search by City" id="searchByCity">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <div id="serachResult"></div>
+    <div id="moreSearchResult"></div>
+
+
+    <script src="js/Jquery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
